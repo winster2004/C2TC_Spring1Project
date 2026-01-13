@@ -128,7 +128,7 @@ const EditMenu = ({
                 setInput({ ...input, image: e.target.files?.[0] || undefined })
               }
             />
-            {error && <span className="text-xs font-medium text-red-600">{error.image?.name}</span>}
+            {error && <span className="text-xs font-medium text-red-600">{typeof error.image === 'string' ? error.image : error.image?.name}</span>}
           </div>
           <DialogFooter className="mt-5">
             {loading ? (

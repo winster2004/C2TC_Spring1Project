@@ -24,11 +24,9 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
 import { useNavigate } from "react-router-dom";
-import { toast } from "sonner";
 import CuisinesInput from "@/components/CuisinesInput";
 import {
   RestaurantFormSchema,
-  restaurantFromSchema,
 } from "@/schema/restaurantSchema";
 
 const Restaurant = () => {
@@ -360,7 +358,7 @@ const Restaurant = () => {
                   />
                   {!isEditing && errors.imageFile && (
                     <span className="text-red-500 text-sm">
-                      {errors.imageFile}
+                      {typeof errors.imageFile === 'string' ? errors.imageFile : ''}
                     </span>
                   )}
                 </div>
