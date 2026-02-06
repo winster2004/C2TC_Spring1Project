@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Package IgnorableNamespaces="uap uap2 uap3" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2" xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3">
+  <Identity Name="F100F45E-9E23-4411-B13A-8198563B8FEF" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="1.2.2602.3017"/>
+  <Properties>
+    <DisplayName>Copilot (Preview)</DisplayName>
+    <PublisherDisplayName>Microsoft Office Services</PublisherDisplayName>
+    <Logo>icon-32.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="12.0.0.0"/>
+    <TargetDeviceFamily Name="Platform.All" MinVersion="0.0.0.0" MaxVersionTested="0.0.0.0"/>
+  </Dependencies>
+  <Resources>
+    <Resource Language="en-us"/>
+  </Resources>
+  <Applications>
+    <Application Id="Microsoft.Office.fa000000124">
+      <uap:VisualElements DisplayName="Copilot (Preview)" Square150x150Logo="icon-32.png" Square44x44Logo="icon-32.png" Description="Copilot (Preview)" BackgroundColor="transparent" AppListEntry="none"/>
+      <Extensions>
+        <uap3:Extension Category="windows.appExtension">
+          <uap3:AppExtension Name="office-add-in-contract" Id="Workbook-add-in" PublicFolder="public\Copilot (Preview)" DisplayName="Copilot (Preview)" Description="Copilot (Preview)">
+            <uap3:Properties/>
+          </uap3:AppExtension>
+        </uap3:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+</Package>

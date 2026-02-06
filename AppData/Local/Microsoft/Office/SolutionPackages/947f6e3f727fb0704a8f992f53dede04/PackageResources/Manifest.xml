@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>F100F45E-9E23-4411-B13A-8198563B8FEF</Id>
+  <Version>1.2.2602.3017</Version>
+  <ProviderName>Microsoft Office Services</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Copilot (Preview)"/>
+  <Description DefaultValue="Copilot (Preview)"/>
+  <IconUrl DefaultValue="assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="assets/icon-80.png"/>
+  <AppDomains>
+    <AppDomain>https://fa000000124.resources.office.net</AppDomain>
+    <AppDomain>https://fa000000124.officeapps.live.com</AppDomain>
+    <AppDomain>https://res.cdn.office.net</AppDomain>
+    <AppDomain>https://res.sdf.cdn.office.net</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="taskpane.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="CdnUrlSupport" MinVersion="1.1" />
+      <Set Name="SharedRuntime" MinVersion="1.1" />
+    </Sets>
+  </Requirements>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+  <Resources>
+      <bt:Urls>
+        <bt:Url id="CopilotChat.URL" DefaultValue="taskpane.html"/>
+        <bt:Url id="Taskpane_DOD.Url" DefaultValue="taskpane_dod.html"/>
+        <bt:Url id="Taskpane_GCCH.Url" DefaultValue="taskpane_gcch.html"/>
+        <bt:Url id="CopilotChatSSR.URL" DefaultValue="https://m365copilotapp.svc.cloud.microsoft/chat"/>
+      </bt:Urls>
+    </Resources>
+    <WebApplicationInfo>
+      <Id>5c6236d6-d06b-44f2-be02-e26864ac8db2</Id>
+      <MsaId>5c6236d6-d06b-44f2-be02-e26864ac8db2</MsaId>
+      <Authorizations>
+        <Authorization>
+          <Resource>79d1f229-c1e5-4bd5-b2fd-4764b025b103</Resource>
+          <Scopes>
+            <Scope>79d1f229-c1e5-4bd5-b2fd-4764b025b103/.default</Scope>
+          </Scopes>
+        </Authorization>
+        <Authorization>
+          <Resource>https://insights.microsoft.com</Resource>
+        </Authorization>
+        <Authorization>
+          <Resource>https://officepyservice.office.net</Resource>
+        </Authorization>
+      </Authorizations>
+    </WebApplicationInfo>
+  </VersionOverrides>
+</OfficeApp>
